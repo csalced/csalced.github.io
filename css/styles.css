@@ -1,14 +1,14 @@
 /* Styles */
+body {
+	color: white;
+	background-color: #6666;
+	text-align: center;
 
-@import url("tables.css");
-@import url("typography.css");
-body {	color: #666666;
-	background-color: #f8f8f8;
-	text-align: center;}#page {
-	width: 600px;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	border: 1px solid #d6d6d6;
-	padding: 20px;}h3 {
-	color: #547ca0;}
+
+}
+h1 {
+    border-width: 1px;
+    border-style: hidden;
+    border-color: black;
+}
+
