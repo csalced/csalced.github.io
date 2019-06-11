@@ -3,11 +3,116 @@
 <head>
 <link rel="stylesheet" type="text/css" href="/csalced.github.io/css/styles%20products.css">
     
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #6666;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+    /
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+    .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #6666;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+</style>
+    
+     <style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+</style>
     
 <body>
 
-    
-<! me >
+
 <header>
     <center>
     <small><small><small> 
@@ -24,89 +129,111 @@
         </h1> 
         </small></small></small>
         </center>
-
-<! w3school>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-}
-
-.header {
-  text-align: center;
-  padding: 32px;
-}
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-</style>
-<!-- Photo Grid -->
-<div class="row"> 
-  <div class="column">
-    <img src="/csalced.github.io/images/brush.png" style="height: 60%">
-    <img src="/csalced.github.io/images/toothbrushpackage.png" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/csalced.github.io/images/shaving%20%20cream.png" style="width:100%">
-    <img src="/csalced.github.io/images/razor.png" style="width:100%" >
-    <img src="/csalced.github.io/images/shave%20set.png" style= "height: 33%" >
-  </div>  
-  <div class="column">
-    <img src="/csalced.github.io/images/pad.png" style="width:100%">
-    <img src="/csalced.github.io/images/pill.png" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/csalced.github.io/images/deorant.jpg" style="width:100%">
-    <img src="/csalced.github.io/images/paste.png" style="width:100%">
-    
-  </div>
-</div>
-   
-
 </header>
     
-</body>
+    
+<div class="sidebar">
+  <a class="active" href="#ORAl">ORAL</a>
+  <a href="#BODY">BODY</a>
+  <a href="#FACIAL">FACIAL</a>
+  <a href="#BOXES">BOXES AND SETS</a>
+</div>
+
+<div class="container">
+  <img src="/csalced.github.io/images/razor.png"  alt="RAZOR" class="image" >
+  <div class="overlay">
+    <div class="text">Razor 2 for $5</div>
+  </div>
+</div>
+    
+    <p> ___________ </p>
+
+    <div class="container">
+  <img src="/csalced.github.io/images/shaving%20%20cream.png" alt="shaving cream" class="image">
+  <div class="overlay">
+    <div class="text">Shaving Cream $8</div>
+  </div>
+</div>
+    
+    <p> ___________ </p>
+
+    <div class="container">
+  <img src="/csalced.github.io/images/shave%20set.png"  alt="shaving set" class="image">
+  <div class="overlay">
+    <div class="text">Shaving Set $15</div>
+  </div>
+</div>
+    
+    <p> ___________ </p>
+
+    <div class="container">
+  <img src="/csalced.github.io/images/brush.png" alt="toothbrush" class="image">
+  <div class="overlay">
+    <div class="text">Toothbrush $1</div>
+  </div>
+</div>
+
+      <p> ___________ </p>
+      
+    <div class="container">
+  <img src="/csalced.github.io/images/paste.png" height="20%" alt="tooth paste" class="image">
+  <div class="overlay">
+    <div class="text">Tooth paste 2 for $5</div>
+  </div>
+</div>
+      
+      <p> ___________ </p>
+    
+<div class="container">
+  <img src="/csalced.github.io/images/toothbrushpackage.png" alt="toothbrush set" class="image">
+  <div class="overlay">
+    <div class="text">Toothbrush Set $10</div>
+  </div>
+</div> 
+    
+<p> ___________ </p>
+    
+    <div class="container">
+  <img src="/csalced.github.io/images/deorant.jpg"  alt="deorant" class="image">
+  <div class="overlay">
+    <div class="text">Deorant 2 for $12</div>
+  </div>
+</div>
+    
+      <p> ___________ </p>
+      
+    <div class="container">
+  <img src="/csalced.github.io/images/FaceWash.png"  alt="Face Wash" class="image">
+  <div class="overlay">
+    <div class="text">Face Wash $8</div>
+  </div>
+</div>
+    
+      <p> ___________ </p>
+      
+    <div class="container">
+  <img src="/csalced.github.io/images/pad.png"  alt="Pads" class="image">
+  <div class="overlay">
+    <div class="text">Menstrual Pads $5 '6 pads in each package' </div>
+  </div>
+</div>
+    
+      <p> ___________ </p>
+      
+    <div class="container">
+  <img src="/csalced.github.io/images/pill.png" alt="Menstrual Pain Pills" class="image">
+        
+    <p> ___________ </p>
+    
+  <div class="overlay">
+    <div class="text">Menstrual Pain Pills $3 '6 pills in each box'</div>
+  </div>
+        
+<p> ___________ </p>
+
+            
+</div>
+
     
 <footer>
     
@@ -114,17 +241,6 @@ body {
     
 <meta name="viewport" content="width=device-width, initial-scale=1">
     
-<style>
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: black;
-   color: white;
-   text-align: center;
-}
-</style>
 
 <div class="footer">
   <img src="/csalced.github.io/images/LinkedIn_logo_initials.png" width=30px height=30px align="right"/>
@@ -135,5 +251,8 @@ body {
 </div>
     
 </footer>
+    
+    
+    </body>
     
 </head>
