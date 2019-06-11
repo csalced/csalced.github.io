@@ -34,6 +34,80 @@
 .container:hover .overlay {
   opacity: 1;
 }
+    
+    .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+    .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #6666;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+</style>
+    
+     <style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
     </style>
     
     </head>
@@ -58,6 +132,15 @@
         </center>
 </header>
     
+    <div class="sidebar">
+  <a class="active" href="/csalced.github.io/htmls/ORAL.html">ORAL</a>
+  <a href="/csalced.github.io/htmls/BODY.html">BODY</a>
+  <a href="/csalced.github.io/htmls/FACIAL.html">FACIAL</a>
+  <a href="/csalced.github.io/htmls/BODY.html">BOXES AND SETS</a>
+</div>
+    
+    
+    <center>
     <div class="container">
   <img src="/csalced.github.io/images/razor.png"  alt="RAZOR" class="image" >
   <div class="overlay">
@@ -97,7 +180,7 @@
   <div class="overlay">
     <div class="text">Menstrual Pain Pills $3 '6 pills in each box'</div>
   </div>
-    
+    </center>
     
     <footer>
     
